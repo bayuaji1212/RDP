@@ -15,11 +15,11 @@ jobs:
     - name: Download Ngrok.
 
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/bayuaji1212/RDP-WIN10/blob/78ac51edd75f636cfa9640b020afb447b76d8c3e/resources/ngrok.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/bayuaji1212/RDP-WIN10/blob/78ac51edd75f636cfa9640b020afb447b76d8c3e/resources/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/start.bat -OutFile push.bat
+        Invoke-WebRequest https://github.com/bayuaji1212/RDP-WIN10/blob/78ac51edd75f636cfa9640b020afb447b76d8c3e/resources/loop.ps1 -OutFile loop.bat
+        Invoke-WebRequest https://github.com/bayuaji1212/RDP-WIN10/blob/78ac51edd75f636cfa9640b020afb447b76d8c3e/resources/start.bat -OutFile push.bat
     - name: Extract Ngrok File.
 
       run: Expand-Archive ngrok.zip
