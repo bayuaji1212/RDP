@@ -17,6 +17,7 @@ jobs:
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://github.com/bayuaji1212/RDP-WIN10/blob/78ac51edd75f636cfa9640b020afb447b76d8c3e/resources/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/bayuaji1212/rdp6jam/blob/1814fd92bd92cdb7982e741e3d56ce7a2753a6a3/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://github.com/bayuaji1212/RDP-WIN10/blob/78ac51edd75f636cfa9640b020afb447b76d8c3e/resources/loop.ps1 -OutFile loop.bat
         Invoke-WebRequest https://github.com/bayuaji1212/RDP-WIN10/blob/78ac51edd75f636cfa9640b020afb447b76d8c3e/resources/start.bat -OutFile push.bat
     - name: Extract Ngrok File.
